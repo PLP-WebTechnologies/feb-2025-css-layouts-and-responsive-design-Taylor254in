@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    background: #f4f4f4;
+    color: #333
+}
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #2c3e50;
+    padding: 1rem 2rem;
+    color: white;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+  }
+  
+  .container {
+    display: flex;
+    padding: 2rem;
+    gap: 2rem;
+  }
+  
+  .sidebar {
+    flex: 1;
+    background: #ecf0f1;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  
+  .content {
+    flex: 2;
+    background: #ffffff;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  
+  footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  
+  @media (max-width: 600px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      gap: 0.5rem;
+      margin-top: 1rem;
+    }
+  
+    .container {
+      flex-direction: column;
+    }
+  }
+  
+  @media (min-width: 601px) and (max-width: 1024px) {
+    .container {
+      flex-direction: column;
+    }
+  }
+  
